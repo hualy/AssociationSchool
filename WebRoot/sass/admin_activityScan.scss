@@ -1,0 +1,219 @@
+@charset "utf-8";
+@import "mixin";
+
+table{
+  width: 90%;
+  text-align: center;
+  color:#717171;
+  font-size: 16px;
+  font-weight: bold;
+  //font-size: 30px;
+  thead{
+    tr{
+      th{
+        text-align: center;
+        padding: 10px;
+        &:last-child{
+          color: #d7d7d7;
+        }
+      }
+
+      border-bottom: 5px solid #44afae;
+    }
+  }
+  tbody{
+    td{
+      padding: 10px;
+    }
+    tr{
+      border-bottom: 2px solid #717171;
+    }
+  }
+
+}
+
+
+
+
+/*** 隐藏默认的checkbox***/
+input[type=checkbox] {
+  width: 30px;
+  height: 30px;
+  border:2px solid #717171;
+  background-color: #fff;
+  margin-top: 0;
+}
+
+.edit{
+  width: 100px;
+  height: 30px;
+  background-color: #44afae;
+  color: #fff;
+  border:1px solid #44afae;
+  font-size: 18px;
+  float: right;
+  //margin-right: 200px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.create{
+  margin-right: 20px;
+  background-color: #44afae;
+  color: #fff;
+}
+.delete{
+  margin-right: 20px;
+  background-color: #fff;
+  color: #44afae;
+}
+.setCurrent{
+  margin-right: 200px;
+  width: 150px;
+}
+
+//往期活动添加按钮
+.createOldActivity{
+  float: none;
+  background-color: #44afae;
+  color: #fff;
+  margin: 0;
+}
+
+//往期活动内容框框
+.oldActivityContent{
+  width: 80%;
+  min-height: 270px;
+  margin-top: 20px;
+  border:1px solid #44afae;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #717171;
+  .activityHeader{
+    margin-bottom: 20px;
+    p{
+      display: inline-block;
+      margin-right: 20px;
+    }
+    p.oldActivityTip{
+      color: #c0c0c0;
+    }
+  }
+  textarea,.divElement{
+    width: 100%;
+    resize: none;
+    min-height: 180px;
+    display: block;
+    resize: none;
+    //@include box-shadow(0px 0px 5px rgba(136, 136, 136,.5));
+    border: 1px;
+    padding: 20px;
+    outline: none;
+  }
+}
+
+
+//分页
+.content{
+  position: relative;
+  min-height: 1000px;
+}
+.bottomNav{
+  width: 100%;
+  position:absolute;
+  bottom: -80px;
+  left:300px;
+  nav{
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+.modal-dialog{
+  margin-top: 50px;
+  //width: 800px !important;
+  width: 60%;
+  .modal-body{
+    padding: 20px 70px 20px 50px;
+  }
+  .modal-header{
+    height: 50px;
+  }
+  .modal-footer{
+    @include bottomBtn();
+  }
+}
+
+.summaryDialog{
+  width: 70%;
+}
+
+.modalForm{
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  input,select{
+    margin-right: 20px;
+    width:280px;
+    height: 25px;
+    margin-left: 10px;
+    border:1px solid #dddcdc;
+    @include box-shadow(0px 0px 5px rgba(136, 136, 136,.5));
+    color: #717171;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    //float: left;
+  }
+}
+
+.editform{
+  &>div{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    //width: 300px;
+  }
+  label{
+    width: 150px;
+    text-align: right;
+  }
+  div.timeInput{
+    position: relative;
+  }
+  input.timeinput{
+    width: 125px;
+  }
+  p{
+    position: absolute;
+    left: 295px;
+    top:-5px;
+  }
+  textarea{
+    width: 500px;
+    height: 200px;
+    border:1px solid #dddcdc;
+    @include box-shadow(0px 0px 5px rgba(136, 136, 136,.5));
+    color: #717171;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-left: 10px;
+    resize: none;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .textareaLabel{
+    margin-top: 5px;
+  }
+}
+
+
+//rili
+#boxCal{
+  z-index: 9999;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+	">
+	
+		<!-- 注入sessionFactory 到 daoImpl -->
+		<!-- 
+		<bean id="baseDao" class="com.gbdut.ds.daoImpl.BaseDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		 -->
+	<bean name="departmentDao" class="com.xyz.daoimpl.DepartmentDaoImpl" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="activityDao" class="com.xyz.daoimpl.ActivityDaoImpl" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="activityExpensesDao" class="com.xyz.daoimpl.ActivityExpensesDaoImpl" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="activitySummaryDao" class="com.xyz.daoimpl.ActivitySummaryDaoImpl" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="administratorDao" class="com.xyz.daoimpl.AdministratorDaoImpl" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="arrangementsDao" class="com.xyz.daoimpl.ArrangementsDaoImpl" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="entertainmentDao" class="com.xyz.daoimpl.EntertainmentDaoImpl" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="meetingRecordDao" class="com.xyz.daoimpl.MeetingRecordDaoImpl" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="memberDao" class="com.xyz.daoimpl.MemberDaoImpl" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="timeTableDao" class="com.xyz.daoimpl.TimeTableDaoImpl" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+</beans>

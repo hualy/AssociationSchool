@@ -1,0 +1,288 @@
+/* line 2, ../sass/mixin.scss */
+.tab {
+  width: 245px;
+  height: 50px;
+  background-color: #384068;
+  border-right: 5px solid #44afae;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 223px;
+}
+/* line 10, ../sass/mixin.scss */
+.tab p {
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 52, ../sass/mixin.scss */
+.createBtn button {
+  margin-left: 238px;
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #44afae;
+  border: none;
+}
+/* line 63, ../sass/mixin.scss */
+.createBtn button img {
+  margin-right: 10px;
+}
+
+/* line 9, ../sass/activityAlbum.scss */
+.zzsc-container {
+  position: relative;
+  padding-top: 30px;
+  width: 68%;
+}
+/* line 16, ../sass/activityAlbum.scss */
+.zzsc-container .ssi-InputLabel .success {
+  margin-left: 180px;
+}
+/* line 20, ../sass/activityAlbum.scss */
+.zzsc-container select {
+  position: absolute;
+  top: 5px;
+  width: 150px;
+  height: 30px;
+  border: 1px solid #44afae;
+  color: #717171;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+/* line 36, ../sass/activityAlbum.scss */
+.album {
+  width: 68%;
+  margin: 0px auto 50px;
+}
+/* line 39, ../sass/activityAlbum.scss */
+.album .row {
+  margin-left: 0;
+  margin-bottom: 50px;
+}
+/* line 43, ../sass/activityAlbum.scss */
+.album .row > div {
+  width: 250px;
+  height: 270px;
+  margin-right: 75px;
+  padding: 25px;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+}
+/* line 49, ../sass/activityAlbum.scss */
+.album .row > div:last-child {
+  margin-right: 0;
+}
+/* line 53, ../sass/activityAlbum.scss */
+.album .row > div .photoInfo {
+  margin-top: 20px;
+}
+/* line 55, ../sass/activityAlbum.scss */
+.album .row > div .photoInfo p {
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 30px;
+}
+/* line 63, ../sass/activityAlbum.scss */
+.album .row > div .photoDiv {
+  width: 200px;
+  height: 170px;
+  cursor: pointer;
+}
+/* line 66, ../sass/activityAlbum.scss */
+.album .row > div .photoDiv img {
+  width: 200px;
+  height: 170px;
+}
+/* line 72, ../sass/activityAlbum.scss */
+.album .row > div .upload {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  background-color: #717171;
+  margin-bottom: 10px;
+}
+/* line 77, ../sass/activityAlbum.scss */
+.album .row > div .upload img {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  cursor: pointer;
+}
+
+/* line 88, ../sass/activityAlbum.scss */
+.maincontent {
+  position: relative;
+  min-height: 1600px;
+}
+
+/* line 92, ../sass/activityAlbum.scss */
+.bottomNav {
+  width: 100%;
+  position: absolute;
+  bottom: -80px;
+  text-align: center;
+}
+/* line 97, ../sass/activityAlbum.scss */
+.bottomNav nav {
+  margin: 0 auto;
+}
+
+/* line 104, ../sass/activityAlbum.scss */
+.modal-dialog {
+  margin-top: 50px;
+  width: 70%;
+}
+/* line 108, ../sass/activityAlbum.scss */
+.modal-dialog .modal-body {
+  padding: 20px 50px;
+}
+/* line 112, ../sass/activityAlbum.scss */
+.modal-dialog .modal-header {
+  height: 50px;
+}
+/* line 25, ../sass/mixin.scss */
+.modal-dialog .modal-footer button {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 32, ../sass/mixin.scss */
+.modal-dialog .modal-footer .cancelBtn {
+  border: 1px solid #44afae;
+  background-color: #fff;
+  color: #44afae;
+  margin-right: 20px;
+}
+/* line 39, ../sass/mixin.scss */
+.modal-dialog .modal-footer .submitBtn {
+  border: 1px solid #44afae;
+  background-color: #44afae;
+  color: #fff;
+  margin-right: 30px;
+}
+
+/* line 120, ../sass/activityAlbum.scss */
+.createAblum {
+  width: 50%;
+}
+
+/* line 124, ../sass/activityAlbum.scss */
+.modalForm {
+  position: relative;
+  height: 200px;
+}
+/* line 128, ../sass/activityAlbum.scss */
+.modalForm .info input {
+  display: inline-block;
+  color: #707070;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 5px solid #44afae;
+  padding-left: 10px;
+  margin-right: 30px;
+  outline: none;
+}
+/* line 143, ../sass/activityAlbum.scss */
+.modalForm .preview {
+  float: right;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  margin-top: -25px;
+}
+/* line 149, ../sass/activityAlbum.scss */
+.modalForm .preview .previewImageone {
+  position: relative;
+}
+/* line 151, ../sass/activityAlbum.scss */
+.modalForm .preview .previewImageone img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+/* line 156, ../sass/activityAlbum.scss */
+.modalForm .preview .previewImageone img.del_photo {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+/* line 165, ../sass/activityAlbum.scss */
+.modalForm .preview .previewImage {
+  margin: 0 20px 20px 0;
+}
+/* line 166, ../sass/activityAlbum.scss */
+.modalForm .preview .previewImage > div {
+  float: left;
+}
+/* line 171, ../sass/activityAlbum.scss */
+.modalForm .preview .uploadImage {
+  padding-left: 15px;
+}
+/* line 174, ../sass/activityAlbum.scss */
+.modalForm .preview p {
+  color: #707070;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+/* line 185, ../sass/activityAlbum.scss */
+#ImageBox {
+  background: none;
+}
+/* line 187, ../sass/activityAlbum.scss */
+#ImageBox .modal-header {
+  border: none;
+  color: #fff;
+}
+
+/* line 193, ../sass/activityAlbum.scss */
+.previewImagebox {
+  text-align: center;
+  position: relative;
+}
+/* line 198, ../sass/activityAlbum.scss */
+.previewImagebox .next {
+  position: absolute;
+  right: 0;
+  top: 150px;
+}
+/* line 203, ../sass/activityAlbum.scss */
+.previewImagebox .last {
+  position: absolute;
+  left: 0;
+  top: 150px;
+}
+/* line 208, ../sass/activityAlbum.scss */
+.previewImagebox .previewImageboxer {
+  margin: 0 auto;
+  width: 600px;
+  height: 400px;
+}
+/* line 214, ../sass/activityAlbum.scss */
+.previewImagebox .previewImageboxer img {
+  width: 600px;
+  height: 400px;
+}
+
+/* line 224, ../sass/activityAlbum.scss */
+#boxCal {
+  z-index: 9999;
+}

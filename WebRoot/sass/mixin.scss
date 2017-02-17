@@ -1,0 +1,68 @@
+@mixin header{
+  .tab{
+    width: 245px;
+    height: 50px;
+    background-color: #384068;
+    border-right:5px solid #44afae;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 223px;
+    p{
+      line-height: 50px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow:$shadow;
+  box-shadow:$shadow;
+}
+
+@mixin bottomBtn{
+  button{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  .cancelBtn{
+    border:1px solid #44afae;
+    background-color: #fff;
+    color: #44afae;
+
+    margin-right: 20px;
+  }
+  .submitBtn{
+    border:1px solid #44afae;
+    background-color: #44afae;
+    color: #fff;
+    margin-right: 30px;
+  }
+}
+
+@mixin bottomNav{
+
+}
+
+@mixin createBtn{
+  button{
+    margin-left: 238px;
+    margin-top: 50px;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #44afae;
+    border: none;
+    img{
+      margin-right: 10px;
+    }
+  }
+
+}

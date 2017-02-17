@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.xyz.model.Member" table="member">
+	
+		<id name="id" column="id" type="int">
+			<generator class="increment">
+			</generator>
+		</id>
+		
+		<property name="email" column="email" type="string"></property>
+		<property name="password" column="password" type="string"></property>
+		<property name="name" column="name" type="string"></property>
+		<property name="grade" column="grade" type="string"></property>
+		<property name="major" column="major" type="string"></property>
+		<property name="classes" column="classes" type="string"></property>
+		<property name="qq" column="qq" type="string"></property>
+		<property name="phoneNumber" column="phoneNumber" type="string"></property>
+		<property name="dormitory" column="dormitory" type="string"></property>
+		<property name="identity" column="identity" type="string"></property>
+		<property name="headPicture" column="headPicture" type="string"></property>
+		<property name="onshow" column="onshow" type="int"></property>
+		<property name="activated" column="activated" type="int"></property>
+		<property name="activationCode" column="activationCode" type="string"></property>
+		
+		<one-to-one name="timeTable" class="com.xyz.model.TimeTable" cascade="all"></one-to-one>
+		
+		<many-to-one name="department" class="com.xyz.model.Department" column="department_id"></many-to-one>
+
+		<set name="meetingRecordSet" inverse="false" lazy="true" cascade="all">
+			<key column="member_id"></key>
+			<one-to-many class="com.xyz.model.MeetingRecord"/>
+		</set>
+
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+/* line 1, ../sass/footer.scss */
+.bottom {
+  height: 180px;
+  background-color: #2b3048;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-top: 100px;
+  text-align: center;
+}
+/* line 9, ../sass/footer.scss */
+.bottom img {
+  margin-bottom: 20px;
+}
+/* line 12, ../sass/footer.scss */
+.bottom p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+	">
+	 
+		 
+	<!-- 将各种bean添加索引  -->
+	<bean name="activity" class="com.xyz.model.Activity" scope="prototype"></bean>
+	<bean name="arrangements" class="com.xyz.model.Arrangements" scope="prototype"></bean>
+	<bean name="member" class="com.xyz.model.Member" scope="prototype"></bean>
+	<bean name="activityExpenses" class="com.xyz.model.ActivityExpenses" scope="prototype"></bean>
+	<bean name="activitySummary" class="com.xyz.model.ActivitySummary" scope="prototype"></bean>
+	<bean name="administrator" class="com.xyz.model.Administrator" scope="prototype"></bean>
+	<bean name="department" class="com.xyz.model.Department" scope="prototype"></bean>
+	<bean name="entertainment" class="com.xyz.model.Entertainment" scope="prototype"></bean>
+	<bean name="meetingRecord" class="com.xyz.model.MeetingRecord" scope="prototype"></bean>
+	<bean name="timeTable" class="com.xyz.model.TimeTable" scope="prototype"></bean>
+	
+
+</beans>

@@ -1,0 +1,152 @@
+@charset "utf-8";
+@import "mixin";
+//-------------------------标题-------------------------
+@include header();
+
+.createBtn{
+  @include createBtn();
+}
+.maincontent{
+  position: relative;
+  min-height: 1000px;
+}
+
+.personCenter{
+  position: relative;
+  img.edit{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+  }
+  width:66.8%;
+  margin:50px auto;
+  .personImage{
+
+    height: 258px;
+    background-image: url("../images/internal.png");
+    text-align: center;
+    //margin: 50px 395px 20px 395px;
+    //width: 200px;
+    img{
+      margin-top: 50px;
+      margin-bottom: 20px;
+      border-radius: 100%;
+      border: 5px solid #374269;
+    }
+    .personName{
+      width:100px;
+      height:30px;
+      color: #75747c;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 30px;
+      margin: auto;
+      background-color: RGBa(255,255,255,.8);
+    }
+
+  }
+  .personInfo{
+    background-color: #44afae;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    height:100px;
+    padding-top:30px;
+    padding-left: 78px;
+    .personInformation{
+      //padding-top: 20px;
+      span{
+          display: inline-block;
+          float: left;
+          margin-right: 70px;
+          p,img{
+            display: inline-block;
+          }
+          p{
+            margin-bottom: 0;
+          }
+          img{
+            margin-right: 15px;
+          }
+      }
+    }
+  }
+}
+
+
+.modal-dialog{
+  margin-top: 50px;
+  //width: 800px !important;
+  width: 60%;
+  .modal-body{
+    padding: 20px 50px ;
+  }
+  .modal-header{
+    height: 50px;
+  }
+  .modal-footer{
+    @include bottomBtn();
+  }
+}
+
+
+.modalForm{
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  input{
+    margin-right: 20px;
+    width:120px;
+    height: 25px;
+    margin-left: 10px;
+    border:1px solid #dddcdc;
+    @include box-shadow(0px 0px 5px rgba(136, 136, 136,.5));
+    color: #717171;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  textarea{
+    width: 625px;
+    height: 200px;
+    border:1px solid #dddcdc;
+    @include box-shadow(0px 0px 5px rgba(136, 136, 136,.5));
+    color: #717171;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-left: 10px;
+    resize: none;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .textareaLabel{
+    margin-top: 5px;
+  }
+}
+
+.editform{
+  &>div{
+    position: relative;
+    display: inline-block;
+  }
+  .photo{
+    width: 400px;
+  }
+  img{
+    margin-left: 20px;
+  }
+  p.changeImage{
+    position: absolute;
+    left: 217px;
+  }
+  input{
+    //margin-bottom: 20px;
+    float: right;
+    width: 150px;
+    margin-right: 75px;
+  }
+}

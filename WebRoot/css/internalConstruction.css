@@ -1,0 +1,88 @@
+/* line 2, ../sass/mixin.scss */
+.tab {
+  width: 245px;
+  height: 50px;
+  background-color: #384068;
+  border-right: 5px solid #44afae;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 223px;
+}
+/* line 10, ../sass/mixin.scss */
+.tab p {
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 9, ../sass/internalConstruction.scss */
+.maincontent {
+  position: relative;
+  min-height: 1600px;
+}
+
+/* line 13, ../sass/internalConstruction.scss */
+.bottomNav {
+  width: 100%;
+  position: absolute;
+  bottom: -80px;
+  text-align: center;
+}
+/* line 18, ../sass/internalConstruction.scss */
+.bottomNav nav {
+  margin: 0 auto;
+}
+
+/* line 23, ../sass/internalConstruction.scss */
+.internalCon, .beforeCon, .nextCon {
+  width: 66.7%;
+  margin: 50px auto;
+  border-right: 5px solid #364168;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  padding: 40px 20px 20px 20px;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+/* line 34, ../sass/internalConstruction.scss */
+.internalObject, .internalTa {
+  position: absolute;
+  background-color: #de514a;
+  font-size: 18px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 44, ../sass/internalConstruction.scss */
+.internalObject {
+  top: -22px;
+  left: 50px;
+}
+
+/* line 48, ../sass/internalConstruction.scss */
+.internalTa {
+  top: -22px;
+  left: 220px;
+}
+
+/* line 52, ../sass/internalConstruction.scss */
+.beforeCon {
+  color: #fff;
+  background-color: #44afae;
+}
+
+/* line 57, ../sass/internalConstruction.scss */
+.nextCon {
+  color: #44afae;
+  background-color: #fff;
+  border-top: 2px solid #44afae;
+  border-left: 2px solid #44afae;
+  border-bottom: 2px solid #44afae;
+}

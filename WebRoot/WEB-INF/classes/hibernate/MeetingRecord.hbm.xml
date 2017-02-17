@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.xyz.model.MeetingRecord" table="MeetingRecord">
+	
+		<id name="id" column="id" type="int">
+			<generator class="increment">
+			</generator>
+		</id>
+		
+		<property name="theme" column="theme" type="string"></property>
+		<property name="meetingTime" column="meetingTime" type="timestamp"></property>
+		<property name="content" column="content" type="string"></property>
+		<property name="place" column="place" type="string"></property>
+		<property name="recordTime" column="recordTime" type="timestamp"></property>
+		
+		<many-to-one name="member" class="com.xyz.model.Member" column="member_id"></many-to-one>
+
+	</class>
+
+</hibernate-mapping>

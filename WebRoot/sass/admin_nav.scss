@@ -1,0 +1,214 @@
+@import "mixin";
+
+
+html,body{
+  margin:0;
+  padding: 0;
+}
+
+
+.row{
+  margin-right: 0;
+  .left{
+    float: left;
+    width: 18%;
+  }
+  .right{
+    float: right;
+    width: 82%;
+  }
+}
+
+.adNav{
+  z-index: 999;
+  position: fixed;
+  width: 18.2%;
+  background-color: #2b3048;
+  //width: 250px;
+  padding-top: 50px;
+  text-align: center;
+  img{
+    margin:0 auto;
+  }
+  h1{
+    color: #fff;
+    //margin: 20px auto;
+    margin-bottom: 20px;
+  }
+}
+
+.leftNav{
+
+  ul{
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+    p{
+      margin-bottom: 0;
+      padding-left: 15px;
+      color: #44afae;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    &>li{
+      padding-left: 20px;
+      margin-left:-5px;
+      ul{
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            color: #fff;
+            line-height: 50px;
+            font-size: 16px;
+            font-weight:bold;
+            //padding-left: 20px;
+            li {
+              padding-left: 15px;
+              &:hover {
+                background-color: #44afae;
+              }
+            }
+        }
+      }
+    }
+  }
+  padding-bottom: 200px;
+}
+
+.active{
+  background-color: #44afae;
+}
+
+p{
+  margin-bottom: 0;
+}
+.header{
+  background-color: #44afae;
+  margin-top: 50px;
+  position: relative;
+  height: 50px;
+  div{
+    position: absolute;
+    right: 30px;
+    p{
+      display: inline-block;
+      color: #fff;
+      font-size: 16px;
+      line-height: 50px;
+      a{
+        color: #fff;
+        font-size: 16px;
+        line-height: 50px;
+        text-decoration: none;
+      }
+    }
+  }
+  .changeEmail{
+    display: none;
+    margin-top: 60px;
+    text-align: center;
+    position: absolute;
+    right: 60px;
+    background-image: url("../images/tips.png");
+    width: 130px;
+    height: 63px;
+    line-height: 80px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #717171;
+    cursor: pointer;
+  }
+
+
+}
+
+
+
+.content{
+  padding:30px 30px 0 30px;
+  p{
+    color: #717171;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .contentHeader{
+    margin-bottom: 50px;
+  }
+  .contentPart1,.contentpart2{
+    margin: 50px auto 20px 0;
+    small,p{
+      display: inline-block;
+    }
+    small{
+      color: #717171;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 30px;
+      margin-left: 20px;
+    }
+  }
+  .contentPart2{
+    clear: both;
+  }
+}
+
+.modal-dialog{
+  margin-top: 50px;
+  .modal-body{
+    padding: 20px 70px 20px 50px;
+  }
+  .modal-header{
+    height: 50px;
+  }
+  .modal-footer{
+    @include bottomBtn();
+  }
+}
+
+
+.modalFormemail{
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  input{
+    margin-right: 20px;
+    width:200px;
+    height: 25px;
+    margin-left: 10px;
+    border:1px solid #dddcdc;
+    @include box-shadow(0px 0px 5px rgba(136, 136, 136,.5));
+    color: #717171;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    float: right;
+  }
+}
+
+.editformemail{
+  &>div{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    //width: 300px;
+  }
+  label{
+    width: 150px;
+    text-align: right;
+  }
+}
+
+
+.formtips{
+  margin-left: 10px;
+  img{
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+  }
+  color: #717171;
+  font-size: 14px;
+}

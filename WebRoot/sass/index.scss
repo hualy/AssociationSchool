@@ -1,0 +1,171 @@
+@import "mixin";
+
+.carousel-indicators{
+  text-align: center;
+  background-color: #c4c9c8;
+  opacity: 0.5;
+  width: 100%;
+  height: 20px;
+  margin-left: 0;
+  left:0 !important;
+  bottom: 0;
+}
+
+#carousel{
+  position: relative;
+  margin-top: -30px;
+  .item{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  .carousel-indicators{
+    margin-bottom: 0;
+    height: 50px;
+    padding-right: 233px;
+    li{
+      float: right;
+      margin-top: 10px;
+      margin-right: 18px;
+      width:28px;
+      height:28px;
+      background-color: #fff;
+      border-radius: 100%;
+
+    }
+    li.active{
+      border-color: #dd514b;
+      background-color: #dd514b;
+    }
+  }
+}
+#divider2{
+  margin-top: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 5px;
+}
+
+#divider2{
+  background-color: #44afae;
+}
+
+p.tip{
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #717171;
+}
+
+.logodepartment{
+  margin: auto;
+  width: 570px;
+  border-bottom: 3px solid #44b2ae;
+  text-align: center;
+  img{
+    width: 128px;
+    height: 128px;
+    margin: 10px auto;
+    border:5px solid #eda5a1;
+    border-radius: 100%;
+    padding: 10px;
+  }
+
+}
+p.departmentName{
+  @extend p.tip;
+  font-size: 18px;
+  //line-height: 25px;
+ }
+
+
+
+.intro{
+  margin: 30px auto 50px auto;
+  width: 78.9%;
+  .introheader{
+
+    p.introName{
+      @extend p.tip;
+      font-size: 18px;
+      text-align: left;
+    }
+    border-left: 5px solid #dd5047;
+    padding-left: 15px;
+  }
+  .introcontent{
+    height: 150px;
+    background-color: #1a62a7;
+    color: #fff;
+    line-height: 20px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-overflow-ellipsis: ellipsis;
+  }
+}
+.grade{
+  width: 100px;
+  height: 50px;
+  background-color: #44afae;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-top: 10px;
+  }
+}
+.card{
+  padding-left: 14px;
+  margin-bottom: 20px;
+}
+
+.card>div{
+  width: 200px;
+  height: 310px;
+  background-color: #fff;
+  margin-right: 33px;
+  padding:25px;
+
+  @include box-shadow(5px 5px 3px rgba(136, 136, 136,.5));
+  &:last-child{
+    margin-right: 0;
+  }
+  img.peopleImage{
+    border-radius: 100%;
+    border:#40b0b1 5px solid;
+    margin:-10 25px 20px 25px ;
+    width: 100px;
+    height:100px;
+  }
+  .information{
+    margin-bottom: 10px;
+    text-align:center;
+    p{
+      font-size: 16px;
+      font-weight: bold;
+      color: #717171;
+    }
+    border-bottom: solid 5px #43b1ad;
+  }
+  .detailInformation{
+    p{
+      font-size: 16px;
+      font-weight: bold;
+      color: #717171;
+      span{
+        margin-right: 20px;
+      }
+    }
+  }
+}
+

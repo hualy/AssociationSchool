@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import "mixin";
+table{
+  width: 90%;
+  text-align: center;
+  color:#717171;
+  font-size: 16px;
+  font-weight: bold;
+  //font-size: 30px;
+  thead{
+    tr{
+      th{
+        text-align: center;
+        padding: 10px;
+        &:last-child{
+          color: #d7d7d7;
+        }
+      }
+
+      border-bottom: 5px solid #44afae;
+    }
+  }
+  tbody{
+    td{
+      padding: 10px;
+    }
+    tr{
+      border-bottom: 2px solid #717171;
+    }
+  }
+
+}
+
+.edit{
+  width: 100px;
+  height: 30px;
+  background-color: #fff;
+  color: #44afae;
+  border:1px solid #44afae;
+  font-size: 18px;
+  //margin-right: 200px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  float: left;
+}
+.create{
+  margin-right: 600px;
+  background-color: #44afae;
+  color: #fff;
+}
+.show{
+  margin-right: 20px;
+}
+.delete{
+  clear: right;
+}
+
+
+.planTable{
+  @extend table;
+  td.memberPlan{
+    max-width: 200px;
+  }
+  button{
+    color: #1A61A6;
+    border:1px solid #1A61A6;
+    background-color: #fff;
+    margin-right: 20px;
+    width: 100px;
+    height: 30px;
+  }
+}
+
+
+
+
+.modal-dialog{
+  margin-top: 50px;
+  //width: 800px !important;
+  //width: 60%;
+  .modal-body{
+    padding: 20px 70px 20px 50px;
+  }
+  .modal-header{
+    height: 50px;
+  }
+  .modal-footer{
+    @include bottomBtn();
+  }
+}
+
+.modalForm{
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  input,select{
+    margin-right: 20px;
+    width:280px;
+    height: 25px;
+    margin-left: 10px;
+    border:1px solid #dddcdc;
+    @include box-shadow(0px 0px 5px rgba(136, 136, 136,.5));
+    color: #717171;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    //float: right;
+  }
+}
+.courseDialog{
+  width: 60%;
+  .modalForm{
+    select{
+      margin-left: 6px;
+    }
+    p{
+      left: 294px;
+    }
+  }
+}
+.taskDialog{
+  width: 60%;
+  label{
+    width: 100px;
+  }
+  select{
+    margin-left: 6px;
+  }
+
+}
+.editform{
+  &>div{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    //width: 300px;
+  }
+  label{
+    width: 150px;
+    text-align: right;
+  }
+  div.timeInput{
+    position: relative;
+  }
+  input.timeinput{
+      width: 125px;
+  }
+  p{
+    position: absolute;
+    left: 307px;
+    top:-5px;
+  }
+}
+
+.taskform{
+  table{
+    margin-left: 15px;
+    margin-top: 20px;
+    tbody{
+      border-top: 5px solid #43b0ae;
+      td{
+        input{
+          width: 30px;
+        }
+
+      }
+    }
+  }
+  .buttonDiv{
+    margin: 20px auto;
+    //width:200px;
+  }
+  button{
+    background-color: #fff;
+    color: #43b0ae;
+    border: 1px solid #43b0ae;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .last{
+    float: left;
+  }
+  .next{
+    float: right;
+  }
+
+
+}
+
+
+//rili
+#boxCal{
+  z-index: 9999;
+}

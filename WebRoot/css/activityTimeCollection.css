@@ -1,0 +1,109 @@
+/* line 2, ../sass/mixin.scss */
+.tab {
+  width: 245px;
+  height: 50px;
+  background-color: #384068;
+  border-right: 5px solid #44afae;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 223px;
+}
+/* line 10, ../sass/mixin.scss */
+.tab p {
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 6, ../sass/activityTimeCollection.scss */
+.table {
+  width: 65.8%;
+  margin: 50px auto;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+}
+/* line 10, ../sass/activityTimeCollection.scss */
+.table table {
+  margin: auto;
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 16, ../sass/activityTimeCollection.scss */
+.table table p {
+  text-align: center;
+  margin-bottom: 0;
+}
+/* line 20, ../sass/activityTimeCollection.scss */
+.table table caption {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 5px solid #44b0ad;
+}
+/* line 27, ../sass/activityTimeCollection.scss */
+.table table thead tr th {
+  height: 50px;
+  width: 110px;
+  border-right: solid 5px #44b0ad;
+}
+/* line 32, ../sass/activityTimeCollection.scss */
+.table table thead tr .sunday {
+  border-right-width: 0px;
+}
+/* line 38, ../sass/activityTimeCollection.scss */
+.table table tbody td, .table table tbody th {
+  border-top-width: 1px;
+  width: 100px;
+  height: 80px;
+}
+/* line 43, ../sass/activityTimeCollection.scss */
+.table table tbody tr.odd {
+  background-color: #dddddd;
+}
+/* line 47, ../sass/activityTimeCollection.scss */
+.table table tbody th {
+  padding-top: 25px;
+}
+/* line 50, ../sass/activityTimeCollection.scss */
+.table table tbody td {
+  cursor: pointer;
+  position: relative;
+  padding-top: 25px;
+  border-left: solid 5px #44b0ad;
+}
+/* line 55, ../sass/activityTimeCollection.scss */
+.table table tbody td img {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* line 65, ../sass/activityTimeCollection.scss */
+.btn {
+  float: right;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+/* line 25, ../sass/mixin.scss */
+.btn button {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 32, ../sass/mixin.scss */
+.btn .cancelBtn {
+  border: 1px solid #44afae;
+  background-color: #fff;
+  color: #44afae;
+  margin-right: 20px;
+}
+/* line 39, ../sass/mixin.scss */
+.btn .submitBtn {
+  border: 1px solid #44afae;
+  background-color: #44afae;
+  color: #fff;
+  margin-right: 30px;
+}

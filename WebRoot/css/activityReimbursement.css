@@ -1,0 +1,200 @@
+/* line 2, ../sass/mixin.scss */
+.tab {
+  width: 245px;
+  height: 50px;
+  background-color: #384068;
+  border-right: 5px solid #44afae;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 223px;
+}
+/* line 10, ../sass/mixin.scss */
+.tab p {
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 52, ../sass/mixin.scss */
+.createBtn button {
+  margin-left: 238px;
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #44afae;
+  border: none;
+}
+/* line 63, ../sass/mixin.scss */
+.createBtn button img {
+  margin-right: 10px;
+}
+
+/* line 9, ../sass/activityReimbursement.scss */
+.mainReim {
+  color: #707070;
+  width: 65.8%;
+  margin: 50px auto;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+}
+/* line 11, ../sass/activityReimbursement.scss */
+.mainReim p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+/* line 20, ../sass/activityReimbursement.scss */
+.mainReim .reimbursementHeader {
+  border-bottom: 5px solid #44b0ad;
+  position: relative;
+  padding: 10px;
+}
+/* line 23, ../sass/activityReimbursement.scss */
+.mainReim .reimbursementHeader img {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+/* line 31, ../sass/activityReimbursement.scss */
+.mainReim .reimbursementContent {
+  padding: 20px;
+}
+/* line 33, ../sass/activityReimbursement.scss */
+.mainReim .reimbursementContent .row {
+  margin-bottom: 20px;
+}
+/* line 35, ../sass/activityReimbursement.scss */
+.mainReim .reimbursementContent .row p {
+  max-width: 600px;
+  overflow: hidden;
+  margin-right: 100px;
+  display: inline-block;
+}
+/* line 38, ../sass/activityReimbursement.scss */
+.mainReim .reimbursementContent .row p span {
+  text-align: center;
+  padding: 2px 2px 2px 6px;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 20%;
+  margin: 10px;
+}
+
+/* line 55, ../sass/activityReimbursement.scss */
+.modal-dialog {
+  margin-top: 50px;
+  width: 60%;
+}
+/* line 59, ../sass/activityReimbursement.scss */
+.modal-dialog .modal-body {
+  padding: 20px 50px;
+  height: auto;
+}
+/* line 63, ../sass/activityReimbursement.scss */
+.modal-dialog .modal-header {
+  height: 50px;
+}
+/* line 25, ../sass/mixin.scss */
+.modal-dialog .modal-footer button {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 32, ../sass/mixin.scss */
+.modal-dialog .modal-footer .cancelBtn {
+  border: 1px solid #44afae;
+  background-color: #fff;
+  color: #44afae;
+  margin-right: 20px;
+}
+/* line 39, ../sass/mixin.scss */
+.modal-dialog .modal-footer .submitBtn {
+  border: 1px solid #44afae;
+  background-color: #44afae;
+  color: #fff;
+  margin-right: 30px;
+}
+
+/* line 72, ../sass/activityReimbursement.scss */
+.modalForm {
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  height: 300px;
+}
+/* line 78, ../sass/activityReimbursement.scss */
+.modalForm input {
+  margin-right: 20px;
+  width: 120px;
+  height: 25px;
+  margin-left: 10px;
+  border: 1px solid #dddcdc;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 90, ../sass/activityReimbursement.scss */
+.modalForm textarea {
+  height: 200px;
+  width: 100%;
+  border: 1px solid #dddcdc;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 10px;
+  resize: none;
+  margin-top: 10px;
+  padding: 10px;
+}
+/* line 108, ../sass/activityReimbursement.scss */
+.modalForm .textareaLabel {
+  margin-top: 5px;
+}
+
+/* line 116, ../sass/activityReimbursement.scss */
+.maincontent {
+  position: relative;
+  min-height: 1600px;
+}
+
+/* line 120, ../sass/activityReimbursement.scss */
+.bottomNav {
+  width: 100%;
+  position: absolute;
+  bottom: -80px;
+  text-align: center;
+}
+/* line 125, ../sass/activityReimbursement.scss */
+.bottomNav nav {
+  margin: 0 auto;
+}
+
+/* line 130, ../sass/activityReimbursement.scss */
+.formtips {
+  margin-left: 10px;
+  color: #717171;
+  font-size: 14px;
+}
+/* line 132, ../sass/activityReimbursement.scss */
+.formtips img {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}

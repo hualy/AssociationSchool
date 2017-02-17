@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.xyz.model.Activity" table="Activity" >
+	
+		<id name="id" column="id" type="int">
+			<generator class="increment">
+			</generator>
+		</id>
+
+		<property name="name" column="name" type="string"></property>		
+		<property name="photoPath" column="photoPath" type="string"></property>
+		<property name="isTheNewest" column="isTheNewest" type="int"></property>
+		<property name="beginTime" column="beginTime" type="timestamp"></property>
+		<property name="endTime" column="endTime" type="timestamp"></property>
+		
+		
+		<set name="activitySummarySet" inverse="false" lazy="true" cascade="all">
+			<key column="activity_id"></key>
+			<one-to-many class="com.xyz.model.ActivitySummary"/>
+		</set>
+		
+		<set name="activityExpensesSet" inverse="false" lazy="true" cascade="all">
+			<key column="activity_id"></key>
+			<one-to-many class="com.xyz.model.ActivityExpenses"/>
+		</set>
+		
+		<set name="arrangementsSet" inverse="false" lazy="true" cascade="all">
+			<key column="activity_id"></key>
+			<one-to-many class="com.xyz.model.Arrangements"/>
+		</set>
+		
+		<many-to-one name="department" class="com.xyz.model.Department" column="department_id"></many-to-one>
+		
+	</class>
+
+</hibernate-mapping>

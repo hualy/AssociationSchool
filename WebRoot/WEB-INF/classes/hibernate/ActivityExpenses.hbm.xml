@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.xyz.model.ActivityExpenses" table="ActivityExpenses">
+	
+		<id name="id" column="id" type="int">
+			<generator class="increment">
+			</generator>
+		</id>
+		
+		<property name="committer" column="committer" type="string"></property>
+		<property name="content" column="content" type="string"></property>
+		<property name="cost" column="cost" type="float"></property>
+		<property name="commitTime" column="summitTime" type="timestamp"></property>
+		
+		<many-to-one name="activity" class="com.xyz.model.Activity" column="activity_id"></many-to-one>
+
+	</class>
+
+</hibernate-mapping>

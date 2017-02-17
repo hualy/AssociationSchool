@@ -1,0 +1,211 @@
+/* line 2, ../sass/mixin.scss */
+.tab {
+  width: 245px;
+  height: 50px;
+  background-color: #384068;
+  border-right: 5px solid #44afae;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 223px;
+}
+/* line 10, ../sass/mixin.scss */
+.tab p {
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 52, ../sass/mixin.scss */
+.createBtn button {
+  margin-left: 238px;
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #44afae;
+  border: none;
+}
+/* line 63, ../sass/mixin.scss */
+.createBtn button img {
+  margin-right: 10px;
+}
+
+/* line 9, ../sass/personCenter.scss */
+.maincontent {
+  position: relative;
+  min-height: 1000px;
+}
+
+/* line 14, ../sass/personCenter.scss */
+.personCenter {
+  position: relative;
+  width: 66.8%;
+  margin: 50px auto;
+}
+/* line 16, ../sass/personCenter.scss */
+.personCenter img.edit {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+/* line 24, ../sass/personCenter.scss */
+.personCenter .personImage {
+  height: 258px;
+  background-image: url("../images/internal.png");
+  text-align: center;
+}
+/* line 31, ../sass/personCenter.scss */
+.personCenter .personImage img {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-radius: 100%;
+  border: 5px solid #374269;
+}
+/* line 37, ../sass/personCenter.scss */
+.personCenter .personImage .personName {
+  width: 100px;
+  height: 30px;
+  color: #75747c;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: auto;
+  background-color: RGBa(255, 255, 255, 0.8);
+}
+/* line 49, ../sass/personCenter.scss */
+.personCenter .personInfo {
+  background-color: #44afae;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  height: 100px;
+  padding-top: 30px;
+  padding-left: 78px;
+}
+/* line 60, ../sass/personCenter.scss */
+.personCenter .personInfo .personInformation span {
+  display: inline-block;
+  float: left;
+  margin-right: 70px;
+}
+/* line 64, ../sass/personCenter.scss */
+.personCenter .personInfo .personInformation span p, .personCenter .personInfo .personInformation span img {
+  display: inline-block;
+}
+/* line 67, ../sass/personCenter.scss */
+.personCenter .personInfo .personInformation span p {
+  margin-bottom: 0;
+}
+/* line 70, ../sass/personCenter.scss */
+.personCenter .personInfo .personInformation span img {
+  margin-right: 15px;
+}
+
+/* line 79, ../sass/personCenter.scss */
+.modal-dialog {
+  margin-top: 50px;
+  width: 60%;
+}
+/* line 83, ../sass/personCenter.scss */
+.modal-dialog .modal-body {
+  padding: 20px 50px;
+}
+/* line 86, ../sass/personCenter.scss */
+.modal-dialog .modal-header {
+  height: 50px;
+}
+/* line 25, ../sass/mixin.scss */
+.modal-dialog .modal-footer button {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 32, ../sass/mixin.scss */
+.modal-dialog .modal-footer .cancelBtn {
+  border: 1px solid #44afae;
+  background-color: #fff;
+  color: #44afae;
+  margin-right: 20px;
+}
+/* line 39, ../sass/mixin.scss */
+.modal-dialog .modal-footer .submitBtn {
+  border: 1px solid #44afae;
+  background-color: #44afae;
+  color: #fff;
+  margin-right: 30px;
+}
+
+/* line 95, ../sass/personCenter.scss */
+.modalForm {
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 100, ../sass/personCenter.scss */
+.modalForm input {
+  margin-right: 20px;
+  width: 120px;
+  height: 25px;
+  margin-left: 10px;
+  border: 1px solid #dddcdc;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 112, ../sass/personCenter.scss */
+.modalForm textarea {
+  width: 625px;
+  height: 200px;
+  border: 1px solid #dddcdc;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 10px;
+  resize: none;
+  margin-top: 10px;
+  padding: 10px;
+}
+/* line 126, ../sass/personCenter.scss */
+.modalForm .textareaLabel {
+  margin-top: 5px;
+}
+
+/* line 132, ../sass/personCenter.scss */
+.editform > div {
+  position: relative;
+  display: inline-block;
+}
+/* line 136, ../sass/personCenter.scss */
+.editform .photo {
+  width: 400px;
+}
+/* line 139, ../sass/personCenter.scss */
+.editform img {
+  margin-left: 20px;
+}
+/* line 142, ../sass/personCenter.scss */
+.editform p.changeImage {
+  position: absolute;
+  left: 217px;
+}
+/* line 146, ../sass/personCenter.scss */
+.editform input {
+  float: right;
+  width: 150px;
+  margin-right: 75px;
+}

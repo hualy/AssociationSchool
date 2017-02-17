@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import "mixin";
+//-------------------------标题-------------------------
+@include header();
+//-------------------------时间轴-------------------------
+#timeLine{
+  height: 430px;
+  position: relative;
+  margin: 50px auto 50px 10px;
+  #timeLiner{
+    position: absolute;
+    top: 220px;
+  }
+}
+.active-1,.active-2,.active-3,.active-4,.active-5,.active-6{
+  position: absolute;
+  text-align: center;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.theme1,.theme2,.time1,.time2{
+  position: absolute;
+}
+.theme1{
+  margin-left: 30px;
+  top:30px;
+}
+.theme2{
+  margin-left: 33px;
+  bottom: 30px;
+}
+.time1,.time2{
+  color:#717171;
+  margin-left: 10px;
+}
+.time2{
+  top: -25px;
+}
+.testcontent1{
+  //margin-left: 10px;
+  bottom:20px;
+  margin-left: 30px;
+}
+.testcontent{
+  margin-left: 25px;
+}
+.active-3,.active-6,.active-5{
+  top: 210px;
+}
+.active-1,.active-2,.active-4{
+  top:10px;
+}
+.active-1{
+  left:120px;
+}
+.active-3{
+  left:310px;
+}
+.active-2{
+  left:510px;
+}
+.active-5{
+  left:705px;
+}
+.active-4{
+  left: 900px;
+}
+.active-6{
+  left:1090px;
+}
+
+//-------------------------往期活动-------------------------
+.oldActivity{
+  width:67%;
+  margin: 50px auto;
+
+}
+.oldActivity>div{
+  display: inline-block;
+}
+.timeInfo{
+   width: 120px;
+   height: 60px;
+   border-left: 5px solid #0001fe;
+   color: #878787;
+   padding-top: 8px;
+  p{
+    font-size: 16px;
+    font-weight: bold;
+    line-height:20px;
+  }
+ }
+.activityImage{
+  padding: 0;
+  width:200px;
+  height:200px;
+  img{
+    width:200px;
+    height:200px;
+  }
+  margin-right: 34px;
+}
+.activitySummary{
+  width:500px;
+  min-height: 200px;
+  background-color: #44afae;
+  padding: 20px;
+  color: #fff;
+  p{
+    font-size: 16px;
+    font-weight: bold;
+    line-height:20px;
+  }
+}

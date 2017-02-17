@@ -1,0 +1,171 @@
+/* line 2, ../sass/mixin.scss */
+.tab {
+  width: 245px;
+  height: 50px;
+  background-color: #384068;
+  border-right: 5px solid #44afae;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 223px;
+}
+/* line 10, ../sass/mixin.scss */
+.tab p {
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 6, ../sass/activityScan.scss */
+#timeLine {
+  height: 430px;
+  position: relative;
+  margin: 50px auto 50px 10px;
+}
+/* line 10, ../sass/activityScan.scss */
+#timeLine #timeLiner {
+  position: absolute;
+  top: 220px;
+}
+
+/* line 15, ../sass/activityScan.scss */
+.active-1, .active-2, .active-3, .active-4, .active-5, .active-6 {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 23, ../sass/activityScan.scss */
+.theme1, .theme2, .time1, .time2 {
+  position: absolute;
+}
+
+/* line 26, ../sass/activityScan.scss */
+.theme1 {
+  margin-left: 30px;
+  top: 30px;
+}
+
+/* line 30, ../sass/activityScan.scss */
+.theme2 {
+  margin-left: 33px;
+  bottom: 30px;
+}
+
+/* line 34, ../sass/activityScan.scss */
+.time1, .time2 {
+  color: #717171;
+  margin-left: 10px;
+}
+
+/* line 38, ../sass/activityScan.scss */
+.time2 {
+  top: -25px;
+}
+
+/* line 41, ../sass/activityScan.scss */
+.testcontent1 {
+  bottom: 20px;
+  margin-left: 30px;
+}
+
+/* line 46, ../sass/activityScan.scss */
+.testcontent {
+  margin-left: 25px;
+}
+
+/* line 49, ../sass/activityScan.scss */
+.active-3, .active-6, .active-5 {
+  top: 210px;
+}
+
+/* line 52, ../sass/activityScan.scss */
+.active-1, .active-2, .active-4 {
+  top: 10px;
+}
+
+/* line 55, ../sass/activityScan.scss */
+.active-1 {
+  left: 120px;
+}
+
+/* line 58, ../sass/activityScan.scss */
+.active-3 {
+  left: 310px;
+}
+
+/* line 61, ../sass/activityScan.scss */
+.active-2 {
+  left: 510px;
+}
+
+/* line 64, ../sass/activityScan.scss */
+.active-5 {
+  left: 705px;
+}
+
+/* line 67, ../sass/activityScan.scss */
+.active-4 {
+  left: 900px;
+}
+
+/* line 70, ../sass/activityScan.scss */
+.active-6 {
+  left: 1090px;
+}
+
+/* line 75, ../sass/activityScan.scss */
+.oldActivity {
+  width: 67%;
+  margin: 50px auto;
+}
+
+/* line 80, ../sass/activityScan.scss */
+.oldActivity > div {
+  display: inline-block;
+}
+
+/* line 83, ../sass/activityScan.scss */
+.timeInfo {
+  width: 120px;
+  height: 60px;
+  border-left: 5px solid #0001fe;
+  color: #878787;
+  padding-top: 8px;
+}
+/* line 89, ../sass/activityScan.scss */
+.timeInfo p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+/* line 95, ../sass/activityScan.scss */
+.activityImage {
+  padding: 0;
+  width: 200px;
+  height: 200px;
+  margin-right: 34px;
+}
+/* line 99, ../sass/activityScan.scss */
+.activityImage img {
+  width: 200px;
+  height: 200px;
+}
+
+/* line 105, ../sass/activityScan.scss */
+.activitySummary {
+  width: 500px;
+  min-height: 200px;
+  background-color: #44afae;
+  padding: 20px;
+  color: #fff;
+}
+/* line 111, ../sass/activityScan.scss */
+.activitySummary p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+}

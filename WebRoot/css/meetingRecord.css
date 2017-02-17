@@ -1,0 +1,203 @@
+/* line 2, ../sass/mixin.scss */
+.tab {
+  width: 245px;
+  height: 50px;
+  background-color: #384068;
+  border-right: 5px solid #44afae;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 223px;
+}
+/* line 10, ../sass/mixin.scss */
+.tab p {
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 52, ../sass/mixin.scss */
+.createBtn button {
+  margin-left: 238px;
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #44afae;
+  border: none;
+}
+/* line 63, ../sass/mixin.scss */
+.createBtn button img {
+  margin-right: 10px;
+}
+
+/* line 12, ../sass/meetingRecord.scss */
+.maincontent {
+  position: relative;
+  min-height: 1600px;
+}
+
+/* line 16, ../sass/meetingRecord.scss */
+.bottomNav {
+  width: 100%;
+  position: absolute;
+  bottom: -80px;
+  text-align: center;
+}
+/* line 21, ../sass/meetingRecord.scss */
+.bottomNav nav {
+  margin: 0 auto;
+}
+
+/* line 27, ../sass/meetingRecord.scss */
+.recordContent {
+  width: 66.7%;
+  margin: 50px auto;
+  border-top: 5px solid #43b0ae;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  padding: 20px;
+  position: relative;
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 38, ../sass/meetingRecord.scss */
+.recordContent .recordTip {
+  height: 30px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #dd524a;
+}
+/* line 43, ../sass/meetingRecord.scss */
+.recordContent .recordTip p {
+  width: 250px;
+  display: inline-block;
+  margin-bottom: 0;
+}
+/* line 48, ../sass/meetingRecord.scss */
+.recordContent .recordTip img {
+  display: inline-block;
+  width: 20px;
+  cursor: pointer;
+}
+/* line 54, ../sass/meetingRecord.scss */
+.recordContent .recordHeader {
+  border-left: 5px solid #0001fe;
+  height: 30px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+/* line 63, ../sass/meetingRecord.scss */
+.recordContent .recordTa {
+  margin-top: 100px;
+  margin-right: 17px;
+}
+/* line 67, ../sass/meetingRecord.scss */
+.recordContent .recordTa, .recordContent .recordTu {
+  float: right;
+  clear: right;
+}
+/* line 71, ../sass/meetingRecord.scss */
+.recordContent .recordTa label, .recordContent .recordTa p, .recordContent .recordTu label, .recordContent .recordTu p {
+  display: inline-block;
+}
+/* line 75, ../sass/meetingRecord.scss */
+.recordContent .clearDiv {
+  clear: both;
+}
+
+/* line 80, ../sass/meetingRecord.scss */
+.modal-dialog {
+  margin-top: 50px;
+  width: 60%;
+}
+/* line 84, ../sass/meetingRecord.scss */
+.modal-dialog .modal-body {
+  padding: 20px 50px;
+}
+/* line 87, ../sass/meetingRecord.scss */
+.modal-dialog .modal-header {
+  height: 50px;
+}
+/* line 25, ../sass/mixin.scss */
+.modal-dialog .modal-footer button {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 32, ../sass/mixin.scss */
+.modal-dialog .modal-footer .cancelBtn {
+  border: 1px solid #44afae;
+  background-color: #fff;
+  color: #44afae;
+  margin-right: 20px;
+}
+/* line 39, ../sass/mixin.scss */
+.modal-dialog .modal-footer .submitBtn {
+  border: 1px solid #44afae;
+  background-color: #44afae;
+  color: #fff;
+  margin-right: 30px;
+}
+
+/* line 96, ../sass/meetingRecord.scss */
+.modalForm {
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 101, ../sass/meetingRecord.scss */
+.modalForm input {
+  margin-right: 20px;
+  width: 120px;
+  height: 25px;
+  margin-left: 10px;
+  border: 1px solid #dddcdc;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 113, ../sass/meetingRecord.scss */
+.modalForm textarea {
+  height: 200px;
+  width: 100%;
+  border: 1px solid #dddcdc;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 10px;
+  resize: none;
+  margin-top: 10px;
+  padding: 10px;
+}
+/* line 128, ../sass/meetingRecord.scss */
+.modalForm .textareaLabel {
+  margin-top: 5px;
+}
+
+/* line 134, ../sass/meetingRecord.scss */
+.formtips {
+  margin-left: 10px;
+  color: #717171;
+  font-size: 14px;
+}
+/* line 136, ../sass/meetingRecord.scss */
+.formtips img {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}

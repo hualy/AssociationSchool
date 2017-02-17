@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xmlns:aop="http://www.springframework.org/schema/aop"
+        xmlns:tx="http://www.springframework.org/schema/tx"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+	">
+
+
+    <!-- 将各种bean添加索引  -->
+    <!-- 通用的 -->
+    <bean name="checkEmailAction" class="com.xyz.action.publics.CheckEmailAction" scope="prototype">
+    	<property name="memberService" ref="memberService"></property>
+    	<property name="administratorService" ref="administratorService"></property>
+    </bean>
+
+	<bean name="createCheckCodeAction" class="com.xyz.action.publics.CreateCheckCodeAction" scope="prototype"></bean>
+	
+	<bean name="checkCodeValidateAction" class="com.xyz.action.publics.CheckCodeValidateAction" scope="prototype"></bean>
+
+	<bean name="sendMailForPasswordAction" class="com.xyz.action.publics.SendMailForPasswordAction" scope="prototype"></bean>
+	
+	<bean name="accountLogoutAction" class="com.xyz.action.publics.AccountLogoutAction" scope="prototype"></bean>
+	
+
+
+	<!-- 管理员端 -->
+	<bean name="departmentRegisterAction" class="com.xyz.action.department.DepartmentRegisterAction" scope="prototype">
+		<property name="department" ref="department"></property>
+		<property name="departmentService" ref="departmentService"></property>
+		<property name="administrator" ref="administrator"></property>
+	</bean>
+	
+	<bean name="adminLoginAction" class="com.xyz.action.admin.AdminLoginAction" scope="prototype">
+		<property name="administratorService" ref="administratorService"></property>
+		<property name="administrator" ref="administrator"></property>
+	</bean>
+	
+		<bean name="adminActivatedAction" class="com.xyz.action.admin.AdminActivatedAction" scope="prototype">
+		<property name="administrator" ref="administrator"></property>
+		<property name="administratorService" ref="administratorService"></property>
+	</bean>
+	
+	<bean name="publishDepartmentCultureAction" class="com.xyz.action.admin.PublishDepartmentCultureAction" scope="prototype">
+		<property name="departmentService" ref="departmentService"></property>
+	</bean>
+	
+	<bean name="upLoadPicturesAction" class="com.xyz.action.admin.UpLoadPicturesAction" scope="prototype">
+		<property name="departmentService" ref="departmentService"></property>
+	</bean>
+	
+	<bean name="getMemberIntroductionAction" class="com.xyz.action.admin.GetMemberIntroductionAction" scope="prototype">
+		<property name="memberService" ref="memberService"></property>
+	</bean>
+	
+	
+	
+	
+	
+	
+	
+	<!-- 部门成员 -->
+	<bean name="memberRegisterAction" class="com.xyz.action.personInfo.MemberRegisterAction" scope="prototype">
+		<property name="member" ref="member"></property>
+		<property name="memberService" ref="memberService"></property>
+		<property name="administratorService" ref="administratorService"></property>
+	</bean>
+	
+	<bean name="memberLoginAction" class="com.xyz.action.personInfo.MemberLoginAction" scope="prototype">
+		<property name="member" ref="member"></property>
+		<property name="memberService" ref="memberService"></property>
+	</bean>
+	
+	<bean name="memberActivatedAction" class="com.xyz.action.personInfo.MemberActivatedAction" scope="prototype">
+		<property name="member" ref="member"></property>
+		<property name="memberService" ref="memberService"></property>
+	</bean>
+	
+
+</beans>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="universal" location="0,0" size="0,0">
+    <action name="checkEmail" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="createCheckCode" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="checkCodeValidate" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="sendMailForPassword" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="retrievePassword" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="department" location="0,0" size="0,0">
+    <action name="departmentRegister" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="member" location="0,0" size="0,0">
+    <action name="memberRegister" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="memberLogin" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="memberActivated" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="result.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="admin" location="0,0" size="0,0">
+    <action name="adminLogin" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="adminActivated" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="resultDepart.jsp" />
+      </result>
+    </action>
+    <action name="upLoadPictures" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="publishDepartmentCulture" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="test.jsp" path="/test.jsp" location="0,0" size="0,0" />
+  <webResource name="loginDepart.jsp" path="/LoginRegister/loginDepart.jsp" location="0,0" size="0,0" />
+  <webResource name="result.jsp" path="/LoginRegister/result.jsp" location="0,0" size="0,0" />
+  <webResource name="resultDepart.jsp" path="/LoginRegister/resultDepart.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

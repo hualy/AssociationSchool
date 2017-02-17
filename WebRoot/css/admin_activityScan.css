@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* line 4, ../sass/admin_activityScan.scss */
+table {
+  width: 90%;
+  text-align: center;
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 12, ../sass/admin_activityScan.scss */
+table thead tr {
+  border-bottom: 5px solid #44afae;
+}
+/* line 13, ../sass/admin_activityScan.scss */
+table thead tr th {
+  text-align: center;
+  padding: 10px;
+}
+/* line 16, ../sass/admin_activityScan.scss */
+table thead tr th:last-child {
+  color: #d7d7d7;
+}
+/* line 25, ../sass/admin_activityScan.scss */
+table tbody td {
+  padding: 10px;
+}
+/* line 28, ../sass/admin_activityScan.scss */
+table tbody tr {
+  border-bottom: 2px solid #717171;
+}
+
+/*** 隐藏默认的checkbox***/
+/* line 39, ../sass/admin_activityScan.scss */
+input[type=checkbox] {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #717171;
+  background-color: #fff;
+  margin-top: 0;
+}
+
+/* line 47, ../sass/admin_activityScan.scss */
+.edit {
+  width: 100px;
+  height: 30px;
+  background-color: #44afae;
+  color: #fff;
+  border: 1px solid #44afae;
+  font-size: 18px;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* line 59, ../sass/admin_activityScan.scss */
+.create {
+  margin-right: 20px;
+  background-color: #44afae;
+  color: #fff;
+}
+
+/* line 64, ../sass/admin_activityScan.scss */
+.delete {
+  margin-right: 20px;
+  background-color: #fff;
+  color: #44afae;
+}
+
+/* line 69, ../sass/admin_activityScan.scss */
+.setCurrent {
+  margin-right: 200px;
+  width: 150px;
+}
+
+/* line 75, ../sass/admin_activityScan.scss */
+.createOldActivity {
+  float: none;
+  background-color: #44afae;
+  color: #fff;
+  margin: 0;
+}
+
+/* line 83, ../sass/admin_activityScan.scss */
+.oldActivityContent {
+  width: 80%;
+  min-height: 270px;
+  margin-top: 20px;
+  border: 1px solid #44afae;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #717171;
+}
+/* line 92, ../sass/admin_activityScan.scss */
+.oldActivityContent .activityHeader {
+  margin-bottom: 20px;
+}
+/* line 94, ../sass/admin_activityScan.scss */
+.oldActivityContent .activityHeader p {
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 98, ../sass/admin_activityScan.scss */
+.oldActivityContent .activityHeader p.oldActivityTip {
+  color: #c0c0c0;
+}
+/* line 102, ../sass/admin_activityScan.scss */
+.oldActivityContent textarea, .oldActivityContent .divElement {
+  width: 100%;
+  resize: none;
+  min-height: 180px;
+  display: block;
+  resize: none;
+  border: 1px;
+  padding: 20px;
+  outline: none;
+}
+
+/* line 117, ../sass/admin_activityScan.scss */
+.content {
+  position: relative;
+  min-height: 1000px;
+}
+
+/* line 121, ../sass/admin_activityScan.scss */
+.bottomNav {
+  width: 100%;
+  position: absolute;
+  bottom: -80px;
+  left: 300px;
+}
+/* line 126, ../sass/admin_activityScan.scss */
+.bottomNav nav {
+  margin: 0 auto;
+}
+
+/* line 135, ../sass/admin_activityScan.scss */
+.modal-dialog {
+  margin-top: 50px;
+  width: 60%;
+}
+/* line 139, ../sass/admin_activityScan.scss */
+.modal-dialog .modal-body {
+  padding: 20px 70px 20px 50px;
+}
+/* line 142, ../sass/admin_activityScan.scss */
+.modal-dialog .modal-header {
+  height: 50px;
+}
+/* line 25, ../sass/mixin.scss */
+.modal-dialog .modal-footer button {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 32, ../sass/mixin.scss */
+.modal-dialog .modal-footer .cancelBtn {
+  border: 1px solid #44afae;
+  background-color: #fff;
+  color: #44afae;
+  margin-right: 20px;
+}
+/* line 39, ../sass/mixin.scss */
+.modal-dialog .modal-footer .submitBtn {
+  border: 1px solid #44afae;
+  background-color: #44afae;
+  color: #fff;
+  margin-right: 30px;
+}
+
+/* line 150, ../sass/admin_activityScan.scss */
+.summaryDialog {
+  width: 70%;
+}
+
+/* line 154, ../sass/admin_activityScan.scss */
+.modalForm {
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 159, ../sass/admin_activityScan.scss */
+.modalForm input, .modalForm select {
+  margin-right: 20px;
+  width: 280px;
+  height: 25px;
+  margin-left: 10px;
+  border: 1px solid #dddcdc;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+/* line 175, ../sass/admin_activityScan.scss */
+.editform > div {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+/* line 181, ../sass/admin_activityScan.scss */
+.editform label {
+  width: 150px;
+  text-align: right;
+}
+/* line 185, ../sass/admin_activityScan.scss */
+.editform div.timeInput {
+  position: relative;
+}
+/* line 188, ../sass/admin_activityScan.scss */
+.editform input.timeinput {
+  width: 125px;
+}
+/* line 191, ../sass/admin_activityScan.scss */
+.editform p {
+  position: absolute;
+  left: 295px;
+  top: -5px;
+}
+/* line 196, ../sass/admin_activityScan.scss */
+.editform textarea {
+  width: 500px;
+  height: 200px;
+  border: 1px solid #dddcdc;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 10px;
+  resize: none;
+  margin-top: 10px;
+  padding: 10px;
+}
+/* line 210, ../sass/admin_activityScan.scss */
+.editform .textareaLabel {
+  margin-top: 5px;
+}
+
+/* line 217, ../sass/admin_activityScan.scss */
+#boxCal {
+  z-index: 9999;
+}

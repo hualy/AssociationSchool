@@ -1,0 +1,189 @@
+/* line 2, ../sass/mixin.scss */
+.tab {
+  width: 245px;
+  height: 50px;
+  background-color: #384068;
+  border-right: 5px solid #44afae;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 223px;
+}
+/* line 10, ../sass/mixin.scss */
+.tab p {
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 52, ../sass/mixin.scss */
+.createBtn button {
+  margin-left: 238px;
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #44afae;
+  border: none;
+}
+/* line 63, ../sass/mixin.scss */
+.createBtn button img {
+  margin-right: 10px;
+}
+
+/* line 9, ../sass/activitySummary.scss */
+.summarySection {
+  width: 65%;
+  margin: 50px auto;
+}
+/* line 12, ../sass/activitySummary.scss */
+.summarySection p {
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 16, ../sass/activitySummary.scss */
+.summarySection .header {
+  color: #707070;
+  margin-bottom: 20px;
+}
+/* line 20, ../sass/activitySummary.scss */
+.summarySection .header > div {
+  display: inline-block;
+  margin-right: 100px;
+  padding-left: 10px;
+  border-left: 5px solid #de514a;
+}
+/* line 26, ../sass/activitySummary.scss */
+.summarySection .header > div > p {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 35px;
+}
+/* line 32, ../sass/activitySummary.scss */
+.summarySection .content {
+  background-color: #44afae;
+  color: #fff;
+  padding: 20px;
+}
+/* line 38, ../sass/activitySummary.scss */
+.summarySection .content .summaryHeader img {
+  margin-left: 20px;
+}
+/* line 40, ../sass/activitySummary.scss */
+.summarySection .content .summaryHeader img:hover {
+  cursor: pointer;
+}
+/* line 45, ../sass/activitySummary.scss */
+.summarySection .content .summaryContent {
+  min-height: 140px;
+}
+/* line 48, ../sass/activitySummary.scss */
+.summarySection .content p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+/* line 56, ../sass/activitySummary.scss */
+.maincontent {
+  position: relative;
+  min-height: 1600px;
+}
+
+/* line 60, ../sass/activitySummary.scss */
+.bottomNav {
+  width: 100%;
+  position: absolute;
+  bottom: -80px;
+  text-align: center;
+}
+/* line 65, ../sass/activitySummary.scss */
+.bottomNav nav {
+  margin: 0 auto;
+}
+
+/* line 70, ../sass/activitySummary.scss */
+.modal-dialog {
+  margin-top: 50px;
+  width: 60%;
+}
+/* line 74, ../sass/activitySummary.scss */
+.modal-dialog .modal-body {
+  padding: 20px 50px;
+}
+/* line 77, ../sass/activitySummary.scss */
+.modal-dialog .modal-header {
+  height: 50px;
+}
+/* line 25, ../sass/mixin.scss */
+.modal-dialog .modal-footer button {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 32, ../sass/mixin.scss */
+.modal-dialog .modal-footer .cancelBtn {
+  border: 1px solid #44afae;
+  background-color: #fff;
+  color: #44afae;
+  margin-right: 20px;
+}
+/* line 39, ../sass/mixin.scss */
+.modal-dialog .modal-footer .submitBtn {
+  border: 1px solid #44afae;
+  background-color: #44afae;
+  color: #fff;
+  margin-right: 30px;
+}
+
+/* line 87, ../sass/activitySummary.scss */
+#submitSummary input {
+  color: #707070;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 5px solid #44afae;
+  padding-left: 10px;
+  width: 200px;
+  margin-right: 30px;
+  outline: none;
+}
+/* line 102, ../sass/activitySummary.scss */
+#submitSummary textarea {
+  outline: none;
+  color: #707070;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  height: 200px;
+  border: none;
+  resize: none;
+  -webkit-box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  padding: 20px;
+}
+/* line 114, ../sass/activitySummary.scss */
+#submitSummary .row {
+  height: 70px;
+}
+
+/* line 120, ../sass/activitySummary.scss */
+.formtips {
+  margin-left: 10px;
+  color: #717171;
+  font-size: 14px;
+}
+/* line 122, ../sass/activitySummary.scss */
+.formtips img {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}

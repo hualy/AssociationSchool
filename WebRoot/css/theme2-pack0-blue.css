@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Ubuntu Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(http://fonts.gstatic.com/s/ubuntu/v7/_aijTyevf54tkVDLy-dlnD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+.theme2-pack0-blue {
+	position: absolute;
+	font-family: 'Ubuntu Light', 'Ubuntu', arial;
+	text-transform: capitalize;
+	border: 1px solid;
+	border-radius: 4px;
+}
+.theme2-pack0-blue #calendar {
+	display: inline-block;
+	vertical-align: top;
+}
+.theme2-pack0-blue table {
+	border-collapse: collapse;
+}
+.theme2-pack0-blue #contMonth,
+.theme2-pack0-blue #contYear {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	font-size: 14px;
+}
+.theme2-pack0-blue #contMonth:hover,
+.theme2-pack0-blue #contYear:hover {
+	cursor: pointer;
+}
+.theme2-pack0-blue #monthId,
+.theme2-pack0-blue #yearId{
+	margin: 0px;
+	padding: 14px 0px;
+}
+.theme2-pack0-blue #monthsId,
+.theme2-pack0-blue #yearsId {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+	border-left: 1px solid;
+}
+.theme2-pack0-blue .monthCl,
+.theme2-pack0-blue .yearCl {
+	padding: 5px 15px;
+	cursor: pointer;
+}
+.theme2-pack0-blue .dayCl {
+	font-weight: normal;
+	padding: 10px;
+	border-bottom: 1px solid;
+	font-size: 11px;
+	cursor: default;
+}
+.theme2-pack0-blue .dateCl {
+	border: 1px solid;
+	padding: 10px 5px;
+	text-align: center;
+	font-size: 12px;
+	position:relative;
+}
+.theme2-pack0-blue .dateCl:first-child {
+	border-left: none;
+}
+.theme2-pack0-blue .dateCl:hover,
+.theme2-pack0-blue .dateSel {
+	cursor: pointer;
+}
+.theme2-pack0-blue .dateCl:hover:before,
+.theme2-pack0-blue .dateSel:before{
+	content: "";
+	position: absolute;
+	border-bottom: 2px solid;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.theme2-pack0-blue {
+	background: #FAFAFF;
+}
+.theme2-pack0-blue,
+.theme2-pack0-blue .dayCl,
+.theme2-pack0-blue .dateCl {
+	border-color: #C9C6E7;
+}
+.theme2-pack0-blue .dayCl,
+.theme2-pack0-blue .dateCl:hover,
+.theme2-pack0-blue .dateSel {
+	background: #EBEAF6;
+}
+.theme2-pack0-blue .dayCl {
+	color: #5A4DAC;
+}
+.theme2-pack0-blue #contMonth,
+.theme2-pack0-blue #contYear,
+.theme2-pack0-blue #monthsId,
+.theme2-pack0-blue #yearsId {
+	background: #5A4DAC;
+	color: #FAFAFF;
+}
+.theme2-pack0-blue #contMonth:hover,
+.theme2-pack0-blue #contYear:hover,
+.theme2-pack0-blue .monthCl:hover,
+.theme2-pack0-blue .yearCl:hover,
+.theme2-pack0-blue .monthSel,
+.theme2-pack0-blue .yearSel {
+	background: #42349C;
+}
+.theme2-pack0-blue #monthsId,
+.theme2-pack0-blue #yearsId,
+.theme2-pack0-blue .dateCl:hover:before,
+.theme2-pack0-blue .dateSel:before {
+	border-color: #42349C;
+}
+.theme2-pack0-blue .dateCl {
+	color: #42349C;
+}

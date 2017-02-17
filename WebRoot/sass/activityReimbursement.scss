@@ -1,0 +1,139 @@
+@charset "utf-8";
+@import "mixin";
+//-------------------------标题-------------------------
+@include header();
+
+.createBtn{
+  @include createBtn();
+}
+.mainReim{
+  color: #707070;
+  p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  width: 65.8%;
+  margin: 50px auto;
+  @include box-shadow(0px 0px 5px rgba(136, 136, 136,.5));
+  .reimbursementHeader{
+    border-bottom:5px solid #44b0ad;
+    position: relative;
+    img{
+      position: absolute;
+      right: 10px;
+      top:10px;
+      cursor: pointer;
+    }
+    padding: 10px;
+  }
+  .reimbursementContent{
+    padding:20px;
+    .row{
+      margin-bottom: 20px;
+      p{
+        max-width: 600px;
+        overflow: hidden;
+        span{
+          text-align: center;
+          padding: 2px 2px 2px 6px;
+          //display: inline-block;
+          width: 100px;
+          height: 100px;
+          background-color: yellow;
+          border-radius: 20%;
+          margin: 10px;
+        }
+        margin-right: 100px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.modal-dialog{
+  margin-top: 50px;
+  //width: 800px !important;
+  width: 60%;
+  .modal-body{
+    padding: 20px 50px ;
+    height: auto;
+  }
+  .modal-header{
+    height: 50px;
+  }
+  .modal-footer{
+    @include bottomBtn();
+  }
+}
+
+
+.modalForm{
+  color: #717171;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  height: 300px;
+  input{
+    margin-right: 20px;
+    width:120px;
+    height: 25px;
+    margin-left: 10px;
+    border:1px solid #dddcdc;
+    @include box-shadow(0px 0px 5px rgba(136, 136, 136,.5));
+    color: #717171;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  textarea{
+    //width: 625px;
+    height: 200px;
+    width: 100%;
+    border:1px solid #dddcdc;
+    @include box-shadow(0px 0px 5px rgba(136, 136, 136,.5));
+    color: #717171;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-left: 10px;
+    resize: none;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  //.row{
+  //  height: 70px;
+  //}
+  .textareaLabel{
+    margin-top: 5px;
+  }
+}
+
+//分页
+//@include bottomNav();
+
+.maincontent{
+  position: relative;
+  min-height: 1600px;
+}
+.bottomNav{
+  width: 100%;
+  position:absolute;
+  bottom: -80px;
+  text-align: center;
+  nav{
+    margin: 0 auto;
+  }
+}
+
+.formtips{
+  margin-left: 10px;
+  img{
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+  }
+  color: #717171;
+  font-size: 14px;
+}

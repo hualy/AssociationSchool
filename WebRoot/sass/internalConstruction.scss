@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import "mixin";
+//-------------------------标题-------------------------
+@include header();
+
+
+
+
+.maincontent{
+  position: relative;
+  min-height: 1600px;
+}
+.bottomNav{
+  width: 100%;
+  position:absolute;
+  bottom: -80px;
+  text-align: center;
+  nav{
+    margin: 0 auto;
+  }
+}
+
+.internalCon{
+  width: 66.7%;
+  margin: 50px auto;
+  border-right: 5px solid #364168;
+  @include box-shadow(0px 0px 5px rgba(136, 136, 136,.5));
+  padding: 40px 20px 20px 20px ;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.internalObject,.internalTa{
+  position: absolute;
+  background-color: #de514a;
+  font-size: 18px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+.internalObject{
+  top:-22px;
+  left: 50px;
+}
+.internalTa{
+  top: -22px;
+  left: 220px;
+}
+.beforeCon{
+  @extend .internalCon;
+  color: #fff;
+  background-color: #44afae;
+}
+.nextCon{
+  @extend .internalCon;
+  color: #44afae;
+  background-color: #fff;
+  border-top: 2px solid #44afae;
+  border-left: 2px solid #44afae;
+  border-bottom: 2px solid #44afae;
+}

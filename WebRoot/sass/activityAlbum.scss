@@ -1,0 +1,226 @@
+@charset "utf-8";
+@import "mixin";
+//-------------------------标题-------------------------
+@include header();
+
+.createBtn{
+  @include createBtn();
+}
+.zzsc-container{
+
+
+  position: relative;
+  padding-top: 30px;
+  width: 68%;
+  .ssi-InputLabel{
+    .success{
+      margin-left: 180px;
+    }
+  }
+  select{
+    position: absolute;
+    top:5px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #44afae;
+    color: #717171;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+
+}
+
+
+
+.album{
+  width: 68%;
+  margin: 0px auto 50px;
+  .row{
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  .row>div{
+    //background-color:yellow;
+    width: 250px;
+    height: 270px;
+    margin-right: 75px;
+    padding:25px;
+    &:last-child{
+      margin-right: 0;
+    }
+    @include box-shadow(0px 0px 5px rgba(136, 136, 136,.5));
+    .photoInfo{
+      margin-top: 20px;
+      p{
+        color: #717171;
+        font-size: 16px;
+        font-weight: bold;
+        display: inline-block;
+        line-height: 30px;
+      }
+    }
+    .photoDiv{
+      width: 200px;
+      height: 170px;
+      img{
+        width: 200px;
+        height:170px;
+      }
+      cursor: pointer;
+    }
+    .upload{
+      position: relative;
+      width:200px;
+      height: 30px;
+      background-color: #717171;
+      img{
+        position: absolute;
+        right: 20px;
+        top:5px;
+        cursor: pointer;
+      }
+      margin-bottom: 10px;
+    }
+  }
+}
+//分页
+.maincontent{
+  position: relative;
+  min-height: 1600px;
+}
+.bottomNav{
+  width: 100%;
+  position:absolute;
+  bottom: -80px;
+  text-align: center;
+  nav{
+    margin: 0 auto;
+  }
+}
+
+
+//模态框
+.modal-dialog{
+  margin-top: 50px;
+  width: 70%;
+
+  .modal-body{
+    padding: 20px 50px ;
+
+  }
+  .modal-header{
+    height: 50px;
+  }
+  .modal-footer{
+    @include bottomBtn();
+  }
+
+}
+.createAblum{
+  width: 50%;
+}
+
+.modalForm{
+  position: relative;
+  height:200px;
+  .info{
+    input{
+      display: inline-block;
+      color:#707070;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 30px;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      border-bottom: 5px solid #44afae;
+      padding-left: 10px;
+      margin-right: 30px;
+      outline: none;
+    }
+  }
+  .preview{
+    float: right;
+    position: absolute;
+    top:50px;
+    right: 20px;
+    margin-top: -25px;
+    .previewImageone{
+      position: relative;
+      img{
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+      }
+      img.del_photo{
+        width:20px;
+        height: 20px;
+        position: absolute;
+        top:3px;
+        right:3px;
+      }
+    }
+
+    .previewImage{
+      &>div{
+        float: left;
+      }
+      margin: 0 20px 20px 0;
+    }
+    .uploadImage{
+      padding-left: 15px;
+    }
+    p{
+      color:#707070;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+  }
+}
+
+
+//查看图片
+#ImageBox{
+  background: none;
+  .modal-header{
+    border: none;
+    color: #fff;
+  }
+}
+
+.previewImagebox{
+
+  text-align: center;
+  //background-color: yellow;
+  position: relative;
+  .next{
+    position: absolute;
+    right: 0;
+    top:150px;
+  }
+  .last{
+    position: absolute;
+    left: 0;
+    top:150px;
+  }
+  .previewImageboxer{
+    //position: absolute;
+    //left: 150px;
+    margin: 0 auto;
+    width:600px;
+    height: 400px;
+    img{
+      width:600px;
+      height: 400px;
+
+    }
+  }
+}
+
+
+//rili
+#boxCal{
+  z-index: 9999;
+}

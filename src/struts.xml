@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+
+<struts>
+
+	<!-- 设置上传临时文件目录 -->
+	<constant name="struts.multipart.saveDir" value="/tmp"/>
+	<!-- 让spring来往action中注入 -->
+	<constant name="struts.objectFactory" value="spring" />
+
+	
+	<!-- 通用的 -->
+	<package name="universal" extends="json-default,struts-default" namespace="/universal">
+		<!-- 邮箱检查 -->
+		<action name="checkEmail" class="checkEmailAction">
+			<result name="success" type="json"></result>
+		</action>
+		
+		<!-- 验证码 -->
+		<action name="createCheckCode" class="createCheckCodeAction">
+			<result name="success" type="stream">
+				<param name="contentType">image/jpeg</param>
+      			<param name="inputName">inputStream</param>
+			</result>
+		</action>
+		
+		<!-- 验证码检查 -->
+		<action name="checkCodeValidate" class="checkCodeValidateAction">
+			<result name="success" type="json"></result>
+		</action>
+		
+		<!-- 发送找回密码 -->
+		<action name="sendMailForPassword" class="sendMailForPasswordAction">
+			<result name="success" type="json"></result>
+		</action>
+	
+		<!-- 找回密码的修改 -->
+		<action name="retrievePassword" class="retrievePasswordAction">
+			<result name="success" type="json"></result>
+		</action>
+		
+		<!-- 帐号退出 -->
+		<action name="accountLogout" class="accountLogoutAction">
+			<result name="success" type="redirect">/LoginRegister/loginDepart.jsp</result>
+			<result name="input" type="redirect">/LoginRegister/login.jsp</result>
+		</action>
+		
+	</package>
+	
+	
+	
+	<!--部门功能-->
+	<package name="department" extends="json-default,struts-default" namespace="/department">
+	
+		<!-- 部门注册 -->
+		<action name="departmentRegister" class="departmentRegisterAction">
+			<result name="success" type="json">/LoginRegister/registerDepart.jsp</result>
+		</action>
+		
+	</package>
+	
+	
+	<!-- 个人功能 -->
+	<package name="member" extends="json-default,struts-default" namespace="/member">
+		
+		<!-- 个人注册 -->
+		<action name="memberRegister" class="memberRegisterAction">
+			<result name="success" type="json">/LoginRegister/register.jsp</result>
+		</action>
+		
+		<!-- 登录 -->
+		<action name="memberLogin" class="memberLoginAction">
+			<result name="success" type="json">/LoginRegister/login.jsp</result>
+		</action>
+		
+		<!-- 邮件激活 -->
+		<action name="memberActivated" class="memberActivatedAction">
+			<result name="success" type="redirect">
+				<param name="location">/LoginRegister/result.jsp</param>
+				<param name="result">${result}</param>
+			</result>
+		</action>
+		
+	</package>
+	
+	
+	
+	<!-- 管理员操作 -->
+	<package name="admin" extends="json-default,struts-default" namespace="/administrator">
+	
+		<!-- 登录 -->	
+		<action name="adminLogin" class="adminLoginAction">
+			<result name="success" type="json">/LoginRegister/loginDepart.jsp</result>
+		</action>
+		
+		<!-- 邮件激活帐号 -->
+		<action name="adminActivated" class="adminActivatedAction">
+			<result name="success" type="redirect">
+				<param name="location">/LoginRegister/resultDepart.jsp</param>
+				<param name="result">${result}</param>
+			</result>
+		</action>
+		
+		<!-- 上传部门图片 -->
+		<action name="upLoadPictures" class="upLoadPicturesAction">
+			<result name="success" type="json"></result>
+			<interceptor-ref name ="fileUpload"> 
+                <param name="maximumSize">10240000</param>
+            </interceptor-ref> 
+            <interceptor-ref name ="defaultStack"/> 
+		</action>
+		
+		<!-- 发布部门文化 -->
+		<action name="publishDepartmentCulture" class="publishDepartmentCultureAction">
+			<result name="success" type="json"></result>
+		</action>
+		
+		<!-- 获取部门成员信息 -->
+		<action name="getMemberIntroduction" class="getMemberIntroductionAction">
+			<result name="success" type="redirect">/admin/admin_member.jsp</result>
+		</action>
+		
+		<!-- 发布成员展示 -->
+		<action name="publishMemberIntroduction" class="publishMemberIntroductionAction">
+			<result name="success" type="json"></result>
+		</action>
+		
+	</package>
+
+</struts>

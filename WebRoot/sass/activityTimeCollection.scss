@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import "mixin";
+//-------------------------标题-------------------------
+@include header();
+//-------------------------表格-------------------------
+.table{
+  width: 65.8%;
+  margin: 50px auto;
+  @include box-shadow(0px 0px 5px rgba(136, 136, 136,.5));
+  table{
+    margin: auto;
+    color: #717171;
+    font-size: 16px;
+    font-weight: bold;
+    //background-color: yellow;
+    p{
+      text-align: center;
+      margin-bottom: 0;
+    }
+    caption{
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 5px solid #44b0ad;
+    }
+    thead{
+      tr{
+        th{
+          height:50px;
+          width: 110px;
+          border-right: solid 5px #44b0ad;
+        }
+        .sunday{
+          border-right-width: 0px;
+        }
+      }
+    }
+    tbody{
+      td,th{
+        border-top-width: 1px;
+        width: 100px;
+        height: 80px;
+      }
+      tr.odd{
+        background-color: #dddddd;
+      }
+
+      th{
+        padding-top: 25px;
+      }
+      td{
+        cursor: pointer;
+        position: relative;
+        padding-top: 25px;
+        border-left: solid 5px #44b0ad;
+        img{
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.btn{
+  @include bottomBtn();
+  float: right;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
